@@ -1,0 +1,316 @@
+/* basic  */
+/**** General */
+/*
+
+@function headingColor ($color){
+    @if(lightness($color)> 60){
+        @return #df3687;
+    } @else{ @return#ecd7e1}
+
+}
+
+*/
+.primary-button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.color-blue {
+  color: #0c4964;
+}
+
+.color-grey {
+  color: #555252;
+}
+
+.color-gold {
+  color: #e1b60b;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.primary-button {
+  background-color: #ff3cce;
+  color: #f8e6ef;
+  box-shadow: inset 0rem 0rem 0.5rem #ff09c1;
+}
+
+.second-color {
+  color: #ff3cce;
+  display: inline;
+}
+
+.light-grey {
+  color: #7c7878;
+}
+
+.ml-5 {
+  margin-left: 5rem;
+}
+
+.ml-3 {
+  margin-left: 3rem;
+}
+
+.ml-2 {
+  margin-left: 1.3rem;
+}
+
+.mr-2 {
+  margin-right: 1.3rem;
+}
+
+.mlr-auto {
+  margin: 0 auto;
+}
+
+.mr-4 {
+  margin-right: 1.2rem;
+}
+
+.pr-4 {
+  padding-right: 1.8rem;
+}
+
+.w-35 {
+  width: 35%;
+}
+
+.h-20 {
+  height: 20vh;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.h1 {
+  font-size: 2.8rem;
+}
+
+.h2 {
+  font-size: 2.4rem;
+}
+
+.h3 {
+  font-size: 2rem;
+}
+
+.h4 {
+  font-size: 1.6rem;
+}
+
+.bg-top {
+  background-image: url("./../../images/website/Vector 2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bg-right {
+  background-image: url("./../../images/website/Vector 1 (3).png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+}
+
+.website {
+  --primary:#976E72;
+  --grey:#0000004F;
+  /*************navBar***************************************/
+  /*************Hero***************************************/
+  /******************Slider Section***********************************/
+  /*************Category***************************************/
+  /*************Cart***************************************/
+  /*************Details***************************************/
+  /*************Slider***************************************/
+  /****************footer**************/
+}
+.website * {
+  box-sizing: border-box;
+  font-family: Righteous;
+}
+.website .svg {
+  width: 3vw;
+}
+.website .color-primary {
+  color: var(--primary);
+}
+.website .btn-outline-primary, .website .btn-primary {
+  --bs-btn-border-color: var(--primary);
+  --bs-btn-hover-bg:var(--primary);
+  --bs-btn-hover-border-color: var(--primary);
+  --bs-btn-active-bg: var(--primary);
+  --bs-btn-active-border-color: var(--primary);
+  --bs-btn-disabled-color: var(--primary);
+  --bs-btn-disabled-border-color: var(--primary);
+  --bs-btn-disabled-bg: var(--primary);
+}
+.website .btn-outline-primary {
+  --bs-btn-color: var(--primary);
+}
+.website .btn-primary {
+  --bs-btn-bg: var(--primary);
+  --bs-btn-hover-bg:#7e5b5e;
+}
+.website .btn {
+  border-radius: 5rem;
+  padding: 0.2rem 1.2rem;
+}
+.website .font-Roboto {
+  font-family: Roboto;
+}
+.website .font-Righteous {
+  font-family: Righteous;
+}
+.website a:visited {
+  color: var(--primary);
+}
+.website .navbar {
+  font-weight: bold;
+  padding: 0.5rem 0rem 0rem 0rem;
+}
+.website .navbar .active {
+  color: var(--primary);
+  text-decoration: underline;
+}
+.website .hero .filterbar {
+  padding: 0rem 0.2rem;
+  margin: 1rem 0rem 2rem;
+  border-radius: 2rem;
+  box-shadow: inset 0rem 0rem 1rem rgba(0, 0, 0, 0.2);
+  width: 80%;
+}
+.website .hero .filterbar .hstack {
+  justify-content: space-around;
+}
+.website .hero .filterbar .hstack select {
+  border: none;
+  color: var(--grey);
+}
+.website .slider-section {
+  margin: 2rem 0rem;
+}
+.website .slider-section .div-slider {
+  margin: 12rem auto;
+  background-color: rgba(0, 0, 0, 0.1764705882);
+  width: 75vw;
+  height: 15vh;
+  padding: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2745098039);
+  border-radius: 1.2rem;
+}
+.website .slider-section .div-slider .slider-component {
+  transform: translateY(-70%);
+}
+.website .category h2 {
+  margin: 6rem;
+}
+.website .category .card {
+  border: none;
+  width: 80%;
+}
+.website .category .card .card-text {
+  color: rgba(0, 0, 0, 0.768627451);
+}
+.website .category .card .card-text:last-of-type {
+  color: rgba(0, 0, 0, 0.8);
+}
+.website .cart .row > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.website .cart .text-underLine {
+  font-size: 2.5rem;
+  margin: 3rem 0rem;
+  text-decoration: underline;
+}
+.website .details .img {
+  height: 50vh;
+}
+.website .details .linksMap {
+  color: rgba(65, 64, 64, 0.768627451);
+  margin: 2rem 0rem 0.5rem 0rem;
+}
+.website .details .bg {
+  width: 1.3rem;
+  height: 1.3rem;
+  display: inline-block;
+  margin: 0rem 0.5rem;
+  border-radius: 15rem;
+}
+.website .details .bg-blue {
+  background-color: blue;
+}
+.website .details .bg-black {
+  background-color: black;
+}
+.website .details .bg-white {
+  background-color: #e0dcdc;
+}
+.website .details .active {
+  border: 0.1rem solid var(--primary);
+}
+.website .details .btn-radius {
+  padding: 0rem 0.6rem;
+  border-radius: 15rem;
+}
+.website .details .slider-component {
+  width: 35vw;
+}
+.website .details .slider-component .mySlider .slick-slide > div {
+  margin: 0rem 0.3rem;
+}
+.website .details .slider-component .mySlider .img-slider img {
+  width: 5vw !important;
+  filter: brightness(0.5);
+}
+.website .slider-component .mySlider .slick-prev, .website .slider-component .mySlider .slick-next {
+  background-color: var(--primary);
+  border-radius: 15rem;
+}
+.website .slider-component .mySlider .slick-slide > div {
+  margin: 0rem 0.3rem;
+}
+.website .slider-component .mySlider img {
+  filter: brightness(0.5);
+}
+.website .slider-component .mySlider .active {
+  filter: brightness(1);
+  border: none;
+}
+.website footer {
+  background-color: #D9D9D9;
+  padding: 0.5rem;
+}
+.website footer .svg {
+  margin-right: 0.3rem;
+}
+.website footer span {
+  color: #808080;
+}
+
+/**********************media**************/
+@media (min-width: 601) {
+  .margin {
+    margin-left: 1.2rem;
+  }
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 10px;
+  }
+  .details .slider-component {
+    margin: 0 auto;
+  }
+  .details .margin {
+    margin-left: 0.2rem;
+  }
+  footer .col-sm-4 {
+    margin-top: 1rem;
+  }
+}/*# sourceMappingURL=styleSass.css.map */
