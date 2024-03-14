@@ -1,5 +1,5 @@
 {
-  "homepage": "http://rula9112.github.io/ipsum",
+  "homepage": "https://rula9112.github.io/ipsum",
   "name": "application",
   "version": "0.1.0",
   "private": true,
@@ -22,7 +22,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
