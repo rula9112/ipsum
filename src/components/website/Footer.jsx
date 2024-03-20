@@ -1,10 +1,9 @@
 import React from 'react'
 import { Col, Row , Image, Container} from 'react-bootstrap'
-import location from './../../../images/website/lcation.svg';
-import faceBook from './../../../images/website/facebook.svg';
-import insta from './../../../images/website/instagram.svg';
-import twiter from './../../../images/website/Vector (4).svg'
-import logo from './../../../images/website/Logo.svg'
+import faceBook from './../../images/website/facebook.svg';
+import insta from './../../images/website/instagram.svg';
+import twiter from './../../images/website/Vector (4).svg'
+import logo from './../../images/website/Logo.svg'
 
 
 function Footer() {

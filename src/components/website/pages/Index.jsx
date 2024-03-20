@@ -2,8 +2,8 @@ import React from 'react'
 import Hero from '../Hero'
 import Category from '../Category'
 import SliderSection from '../SliderSection'
-import Footer from './Footer'
 import CustomNavBar from '../CustomNavBar'
+import Footer from '../Footer'
 
 function Index() {
   return (

@@ -1,43 +1,20 @@
 import React from 'react'
 import YCard from './YCard'
 import{Row , Col,Container} from 'react-bootstrap'
-import car from './../../images/website/picture (3).png'
-import car2 from './../../images/website/picture (2).png'
-import car3 from './../../images/website/picture (5).png'
-import car4 from './../../images/website/picture (4).png'
+import { useDispatch, useSelector } from 'react-redux';
+
 
 function Category() {
-    const myData=[
-        {
-            CarName:"Audi",
-            price:5000,
-            src:car
-        },
-        {
-            CarName:"Honda",
-            price:5500,
-            src:car2
-        },
+    const {cars , cartStore}  = useSelector(state=>state.cart);
+    const dispatch = useDispatch(); 
 
-        {
-            CarName:"Volvo",
-            price:4000,
-            src:car3
-        },
-        {
-            CarName:"BMW",
-            price:6000,
-            src:car4
-        },
-    ];
-
-    const cards = myData.map((item )=>{
+    const cards =cars.length > 0? cars.map((item , index)=>{
         return(
             <Col md={6} xs={12} className='pb-5 d-flex justify-content-center'>
-                <YCard info={item} />
+                <YCard car={item} cartStore={cartStore} dispatch={dispatch} index={index} />
             </Col>
         )
-    }) 
+    }) :"notavailable";
   return (
     <section className='category'>
         <h2 className="h1 text-center">Top Categories</h2>
